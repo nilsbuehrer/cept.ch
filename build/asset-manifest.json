@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cept.ch/static/css/main.d1b05096.chunk.css",
+    "main.js": "/cept.ch/static/js/main.f22baf65.chunk.js",
+    "main.js.map": "/cept.ch/static/js/main.f22baf65.chunk.js.map",
+    "runtime-main.js": "/cept.ch/static/js/runtime-main.29695c9b.js",
+    "runtime-main.js.map": "/cept.ch/static/js/runtime-main.29695c9b.js.map",
+    "static/js/2.cf750362.chunk.js": "/cept.ch/static/js/2.cf750362.chunk.js",
+    "static/js/2.cf750362.chunk.js.map": "/cept.ch/static/js/2.cf750362.chunk.js.map",
+    "index.html": "/cept.ch/index.html",
+    "precache-manifest.1672799d02c52f8252ec4ef2dc8d9824.js": "/cept.ch/precache-manifest.1672799d02c52f8252ec4ef2dc8d9824.js",
+    "service-worker.js": "/cept.ch/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/cept.ch/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.cf750362.chunk.js.LICENSE": "/cept.ch/static/js/2.cf750362.chunk.js.LICENSE",
+    "static/media/logo.svg": "/cept.ch/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.29695c9b.js",
+    "static/js/2.cf750362.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.f22baf65.chunk.js"
+  ]
+}
