@@ -17,9 +17,8 @@ function App() {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <div className="App">
+      <div className="App" onClick={toggleTheme}>
         <header className="App-header">
-        <button onClick={toggleTheme}>Toggle theme</button>
           <h1>cept.ch</h1>
           <span>by Nils Bührer</span>
         </header>
