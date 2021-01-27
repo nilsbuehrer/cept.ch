@@ -1,0 +1,42 @@
+$t: 0.5s;
+$d: 0.08em;
+$n: 3;
+$cb: cubic-bezier(.33,.15,.63,.84); 
+$back: lightgrey;
+
+@keyframes in{
+    from {
+        transform: translate3d(0,0,0);
+        text-shadow: 0em 0em 0 $back;
+    }
+    to {
+        transform: translate3d($d,-$d,0);
+        text-shadow: -$d $d $back;
+    }
+}
+
+@keyframes out{
+    from {
+        transform: translate3d($d,-$d,0);
+        text-shadow: -$d $d $back;
+    }
+    to {
+        transform: translate3d(0,0,0);
+        text-shadow: 0em 0em 0 $back;
+    }
+}
+
+span {
+    position: relative;
+    display: inline-block;
+    animation: out $t $cb;
+    animation-fill-mode: backwards;
+    user-select: none;
+}
+
+span:hover{
+    position: relative;
+    display: inline-block;
+    animation: in $t $cb;
+    animation-fill-mode: forwards;
+}
