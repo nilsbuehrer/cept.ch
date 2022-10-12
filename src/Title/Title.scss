@@ -1,20 +1,64 @@
-$t: 0.1s;
+$t: 0.2s;
 $d: 0.08em;
-$cb: cubic-bezier(.33,.15,.63,.84); 
+$cb: cubic-bezier(0.33, 0.15, 0.63, 0.84);
 $back: lightgrey;
 
-span {
-    position: relative;
-    display: inline-block;
-    user-select: none;
-    transition: all $t $cb;
-    transform: translate3d(0,0,0);
-    text-shadow: 0em 0em 0 $back;
+.Letter {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  transition: all $t $cb;
+  transform: translate3d(0, 0, 0);
+  text-shadow: 0em 0em 0 $back;
 }
 
-span:hover{
-    position: relative;
-    display: inline-block;
-    transform: translate3d($d,-$d,0);
-    text-shadow: -$d $d $back;
+.Letter:hover {
+  position: relative;
+  display: inline-block;
+  transform: translate3d($d, -$d, 0);
+  text-shadow: -$d $d $back;
+}
+
+.Dot {
+  transition: all $t $cb;
+}
+
+.Dot:hover {
+  position: relative;
+  display: inline-block;
+  transform: scale(1.2);
+  color: #d72323;
+}
+
+.Dot--moving {
+  position: absolute;
+  animation: moveX 3s linear 0s infinite alternate,
+    moveY 5s linear 0s infinite alternate;
+}
+
+.Dot-missing {
+  display: inline-block;
+  margin: 0 8px 0 13px;
+  height: 0.2em;
+  width: 0.2em;
+  border: 1px dashed;
+  border-radius: 100%;
+}
+
+@keyframes moveX {
+  from {
+    left: 0;
+  }
+  to {
+    left: 98vw;
+  }
+}
+
+@keyframes moveY {
+  from {
+    top: 0-9rem;
+  }
+  to {
+    top: 85vh;
+  }
 }
